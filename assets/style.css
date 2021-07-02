@@ -26,7 +26,7 @@
     
   }
 
-  .header{
+  .banner{
     background-image:url("images/Conectividad.jpg");
     width: 100%;
     height: 450px;
@@ -41,7 +41,7 @@
     
   
 
-  .header a{
+  .banner a{
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(44, 88, 138);
@@ -53,11 +53,11 @@
     justify-content:center;
     align-items: center;
     border-radius: 20px;
-    border: 7px solid white;
+    border: 5px solid white;
 
   }
 
-  .inicial{
+  .initial{
     text-align:center;
     font-size: 40px;
     color: rgb(36, 36, 117);
@@ -65,7 +65,7 @@
     
   }
 
-  .inicial2{
+  .initial2{
     color: #2c588a;
     font-size: 25px;
     display: flex;
@@ -79,7 +79,7 @@
   }
 
 
-  .presentación{
+  .father{
     background-image: url("images/redes.jpg");
   }
 
@@ -95,7 +95,7 @@
     box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
   }
   
-  .contenido {
+  .contents {
     padding: 2px 16px;
   }
   
@@ -103,23 +103,30 @@
     border-radius: 10%;
   }
   
-  .contenedor{
+  .container{
     display: grid;
     grid-template-columns: repeat(4, 15%);
     gap: 15px;
     justify-content: center;
   }
 
-  .contact{
+  .contact a{
     font-size: 25px;
-    list-style: none;
     color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 
     
   }
 
+  .logos h3{
+    font-size: 25px;
+    text-align:start;
+  }
+
   .works{
-    background-color: mediumpurple;
+    background-color: rgb(10, 37, 68);
     height: 350px;
   }
 
@@ -140,6 +147,7 @@
     text-align: center;
     list-style: none;
     font-size: 25px;
+    color: whitesmoke;
   }
  
   
