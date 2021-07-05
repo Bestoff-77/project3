@@ -1,7 +1,7 @@
   body{
     font-family: sans-serif;
-    margin: 0;
-    background-image:url("images/embossed-diamond.png");
+    background-color: rgba(124, 120, 120, 0.904);
+    margin-top: 0%;
   
     
   }
@@ -10,92 +10,120 @@
   nav{
     height: 150px;
     width: 100%;
-    font-size: 30px;
+    font-size: 23px;
     font-family: sans-serif;
-    background-color:rgb(44, 88, 138);
+    background-color:rgb(44, 88,138);
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items:center;
     
   
   }
 
-  a{
+  nav a{
     text-decoration: none;
     color: rgb(231, 231, 236);
     
   }
 
-  .banner{
-    background-image:url("images/Conectividad.jpg");
+  nav a:hover{
+    color:black;
+
+  }
+
+  .encabezado{
+    background-image:url("images/digital2.png");
     width: 100%;
-    height: 450px;
+    height: 470px;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content:center;
     align-items:center;
     color: azure;
+    margin-top: 20px;
+    padding-bottom: 30px;
 
     }
     
   
 
-  .banner a{
-    font-size: 40px;
+  .encabezado a{
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(44, 88, 138);
+    background-color: rgba(21, 105, 32, 0.986);
     font-weight: bold;
-    color:white;
-    width: 240px;
-    height: 65px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 50px;
     display: flex;
     justify-content:center;
     align-items: center;
-    border-radius: 20px;
-    border: 5px solid white;
+    border-radius: 18px;
+    border: 2px solid black;
+    text-decoration: none;
+    margin-bottom: 10px;
 
   }
 
-  .initial{
+  .eslogan{
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: 'Otomanopee One', sans-serif;
+    
+  }
+
+  .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor{
+    background-image: url("images/3D-banner-background.jpg");
+    height: 610px;
+    
+
+    }
+
+  .titulo{
     text-align:center;
     font-size: 40px;
-    color: rgb(36, 36, 117);
+    color: whitesmoke;
     
     
   }
 
-  .initial2{
-    color: #2c588a;
-    font-size: 25px;
+  .parrafo{
+    color: whitesmoke;
+    font-size: 30px;
     display: flex;
     justify-content: space-around;
   }
   
-  .title1{
+  .titulo2{
     font-weight:bold; 
     text-align: center;
-    color: black;
+    color: whitesmoke;
   }
 
-
-  .father{
-    background-image: url("images/redes.jpg");
-  }
-
+    
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgb(240, 230, 230);
     transition: 0.3s;
     width: 100%;
-    border-radius: px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
     align-items: center;
+    color: whitesmoke;
   }
   
   .card:hover {
-    box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 18px 0 rgba(15, 49, 243, 0.507);
   }
   
-  .contents {
+  .contenido {
     padding: 2px 16px;
   }
   
@@ -103,11 +131,36 @@
     border-radius: 10%;
   }
   
-  .container{
+  .contenedor-cards{
     display: grid;
     grid-template-columns: repeat(4, 15%);
     gap: 15px;
     justify-content: center;
+  }
+
+  .contenedor2{
+    background-color: rgb(10, 37, 68);
+    height: 430px;
+  }
+
+  .contenedor2 p{
+    text-align: center;
+    font-size: 70px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-family: monospace;
+    color: white;
+    
+  }
+
+  .contenedor2 li{
+    text-align: center;
+    list-style: none;
+    font-size: 25px;
+    color: whitesmoke;
   }
 
   .contact a{
@@ -125,29 +178,38 @@
     text-align:start;
   }
 
-  .works{
-    background-color: rgb(10, 37, 68);
-    height: 350px;
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .encabezado {
+      height: 370px;
+    }
+    .eslogan {
+      font-size: 35px;
+    }
+    #image span:nth-of-type(2) {
+      font-size: 25px;
+    }
+  
+    .parrafos-home {
+      font-size: 20px;
+    }
+  
+    .card h2 {
+      font-size: 17px;
+    }
+    .card p {
+      font-size: 14px;
+    }
+  
+    #schedule {
+      width: 80%;
+    }
+  
+    .day {
+      font-size: 15px;
+    }
   }
+  
 
-  .works p{
-    text-align: center;
-    font-size: 70px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800;
-    font-family: monospace;
-    color: white;
-    
-  }
-
-  .works li{
-    text-align: center;
-    list-style: none;
-    font-size: 25px;
-    color: whitesmoke;
-  }
+  
  
   
