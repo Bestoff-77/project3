@@ -108,6 +108,13 @@
     color: whitesmoke;
   }
 
+  .contenedor-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+    gap: 15px;
+    justify-content: center;
+  }
+
     
   .card {
     box-shadow: 0 4px 8px 0 rgb(240, 230, 230);
@@ -130,13 +137,22 @@
   img {
     border-radius: 10%;
   }
-  
-  .contenedor-cards{
-    display: grid;
-    grid-template-columns: repeat(4, 15%);
-    gap: 15px;
-    justify-content: center;
+
+  @media (min-width: 300px) and (max-width: 499px){
+    .contenedor-cards{
+      grid-template-columns: 70%;
+    }
+
+    .contenedor2{
+      font-size: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
   }
+  
+  
 
   .contenedor2{
     background-color: rgb(10, 37, 68);
@@ -163,7 +179,7 @@
     color: whitesmoke;
   }
 
-  .contact a{
+  .contacto a{
     font-size: 25px;
     color: black;
     display: flex;
@@ -178,36 +194,12 @@
     text-align:start;
   }
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .encabezado {
-      height: 370px;
-    }
-    .eslogan {
-      font-size: 35px;
-    }
-    #image span:nth-of-type(2) {
-      font-size: 25px;
-    }
   
-    .parrafos-home {
-      font-size: 20px;
-    }
+
+    
+   
   
-    .card h2 {
-      font-size: 17px;
-    }
-    .card p {
-      font-size: 14px;
-    }
   
-    #schedule {
-      width: 80%;
-    }
-  
-    .day {
-      font-size: 15px;
-    }
-  }
   
 
   
