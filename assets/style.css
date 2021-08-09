@@ -67,7 +67,7 @@
 
   }
 
-  .eslogan{
+  .esloganCentro{
     font-size: 50px;
     color: whitesmoke;
     font-family: 'Otomanopee One', sans-serif;
@@ -194,6 +194,55 @@
     text-align:start;
   }
 
+  /*Modal*/
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay.hide {
+    display: none;
+    
+}
+.modal-body {
+    width: 400px;
+    height: 400px;
+    background-color:rgba(21, 105, 32, 0.986);
+    text-align: center;
+    border-radius: 6px;
+    color: black;
+    opacity: .90;
+
+}
+
+/* nueva seccion */
+
+.message {
+  font-family: sans-serif;
+  padding: 10px;
+  display: inline-block;
+  opacity: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: #333;
+  transition: ease-in opacity 0.5;
+}
+.message.show {
+  opacity: 1;
+}
+.error {
+  background-color: rgb(128, 48, 60);
+}
+.success {
+  background-color: lightgreen;
+}
   
 
     

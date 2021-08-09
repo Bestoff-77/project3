@@ -28,11 +28,38 @@
   </nav>
 
   <main class="encabezado">
-     <div class="eslogan">
-        <span>Evolución digital para tu negocio<br></span>
-     <div class="boton">
+    <div class="eslogan">
+      <span class="esloganCentro">Evolución digital para tu negocio<br></span>
+      <div id="open-modal-btn" class="boton">
         <a href="#">Comienza aqui</a>
-     </div>
+      </div>
+      <!--  <button id="open-modal-btn">Open modal</button> -->
+
+      <!-- seccion modal --> 
+      <div id="modal1" class="overlay hide">
+          <div class="modal-body">
+            <h1>Registrate</h1>
+
+            <form>
+              <label for="form-name">Nombre</label> 
+              <input name="form-name" id="form-name" type="text" required> <br>
+              <label for=form-email>Email</label> 
+              <input name=form-email id=form-email type=email required> <br>
+              <label for=form-url>Contraseña</label>
+              <input name=form-url id=form-url type=url><br><br>
+              <label for=form-comment>Comentario</label>
+              <textarea name=form-comment id=form-comment required>
+              </textarea>
+              <button id="registrar-btn">Registrar</button>
+            </form>
+
+            <div id="error1" class="message error">Error message...</div>
+            <div id="success1" class="message success">Success message...</div>
+
+            <button id="close-moda-btn">Close modal</button>
+          </div>
+        </div>
+    </div>
   </main>
 
   <section class="contenedor">
@@ -103,7 +130,7 @@
     <h6>Copyright. All Rights Reserved. by Sergio Besthoff</h6>
   </footer>
 
-
+  <script src="./assets/js/scb.js"></script>
 </body>
 
 </html>
